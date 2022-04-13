@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function userdefind(){
+
+            uservalue = document.getElementById("username").value;
+
+            var userArray = new Array(5);
+
+            for (index=0; index< userArray.length; index++){
+
+                userArray[index] = uservalue+"<br>";
+            }
+            document.write(userArray);
+        }
+    </script>
+
+
+<style>
+    input{
+        width: 200px;
+        height: 40px;
+        background-color: burlywood;
+        margin-top: 100px;
+        margin-left: 200px;
+    }
+</style>
+</head>
+<body>
+    <div >
+
+        <input type="text" id="username" placeholder="uservalue"><br>
+
+        <input type="button" onclick="userdefind()" value="save">
+    </div>
+</body>
+</html>

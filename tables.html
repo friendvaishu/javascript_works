@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+     function  myFunction(){ 
+      //  let a=document.getElementById('value_1')
+      // let b;
+       // a = 2;
+  //document.getElementById('user_value')//
+     let a =  document.getElementById('uservalue').value;
+        document.getElementById('tables_div').style.visibility = 'visible';
+
+       for(i=1 ; i<=10 ; i++) {
+
+            var loopId = "loop"+i;
+            var valueId = "value"+i;
+            var totalId = "total"+i
+
+           // console.log(loopId);
+          //  console.log(valueId);
+          //  console.log(totalId);
+
+
+          if(i){
+            document.getElementById(loopId).value = i;
+
+            document.getElementById(valueId).value = a;
+
+            b = a * i ;
+            document.getElementById(totalId).value = b;
+
+            }
+            // var value = document.getElementById("loop"+i).value;
+            // console.log(value);
+        //    b=a*value_1;
+
+        //    document.write(value_1 + "X" + a + "=" + b +"<br>" );
+
+       }
+     }
+   </script>
+    
+    <style>
+        input{
+            width: 200px;
+            height: 50px;
+            background-color: whitesmoke;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="number" id="uservalue" placeholder="enter value">
+    </div>
+
+    <div id="tables_div" style="visibility: hidden;">
+  <div >
+        <input type="number" id="loop1" placeholder="loop 1">
+            X
+        <input type="number" id="value1" placeholder=" Value 1">
+            =
+        <input type="number" id="total1" placeholder=" Total 1">
+    </div> 
+
+    <div>
+        <input type="number" id="loop2" placeholder="loop 1">
+            X
+        <input type="number" id="value2" placeholder=" Value 1">
+            =
+        <input type="number" id="total2" placeholder=" Total 1">
+    </div> 
+
+    <div>
+        <input type="number" id="loop3" placeholder="loop 1">
+            X
+        <input type="number" id="value3" placeholder=" Value 1">
+            =
+        <input type="number" id="total3" placeholder=" Total 1">
+
+        
+    </div> 
+    
+    
+</div>
+
+<input type="button" onclick="myFunction()" value="multiplication">
+</body>
+</html>

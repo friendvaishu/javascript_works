@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function myfunction(){
+
+            var user = document.getElementById("userValue").value;
+
+            var squareRoot =  parseInt (Math.sqrt(user));
+
+            document.write(squareRoot);
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+
+        <input type="text"  id="userValue" placeholder="number">
+        <input type="button" onclick="myfunction()" value="squareroot">
+    </div>
+</body>
+</html>

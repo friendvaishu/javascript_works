@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function  myFunction(){
+
+            var user1 =  document.getElementById("user1").value;
+
+            for (i=0; i<=3; i++){
+                  user[i]
+
+                if (user1 >= user2  && user1>=user3){
+                    document.getElementById("output").innerHTML =(`${user[0]} is largest`);
+                }
+                else if (user2 >= user1 && user2>=user3){
+                    document.getElementById("output").innerHTML = (`${user[1]} is largest`);
+                }
+                else{
+                    document.getElementById("output").innerHTML = (`${user[2]} is largest`);
+                }
+                    
+                    
+           }
+
+          
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <h1>To find largest among three numbers</h1>
+
+        <input type="number" id="user1" placeholder="userValue1">
+        <input type="number" id="user2" placeholder="userValue2">
+        <input type="number" id="user3" placeholder="userValue3">
+
+        <input type="button" onclick="myFunction()" value="save">
+
+        <h2 id="output"></h2>
+
+    </div>
+</body>
+</html>

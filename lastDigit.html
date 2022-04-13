@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function myFunction(){
+
+            var num1 = prompt('enter the first number: ');
+            var num2 = prompt('enter the second number: ');
+            var num3 = prompt('enter the third number: ');
+
+            var result1 =num1 %10;
+            var result2 = num2 %10;
+            var result3 = num3 %10;
+
+            if( result1 == result2 && result1 == result3){
+                document.write(`${num1}, ${num2}  and ${num3}  have the same last digit `);
+            }
+            else{
+                document.write(`${num1}, ${num2}  and ${num3}  have the  diffrent last digit `);
+
+            }
+
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="button" onclick="myFunction()" value="save">
+    </div>
+</body>
+</html>

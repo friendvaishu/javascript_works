@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function addition1(){
+
+           var valueOne = parseInt(document.getElementById('first_value_one').value);
+           var valueTwo = parseInt(document.getElementById('first_value_two').value);
+           var total = valueOne + valueTwo;
+
+           document.getElementById('first_total').value = total;
+        }
+
+        function addition2(){
+            
+            var valueOne = parseInt(document.getElementById('second_value_one').value);
+            var valueTwo = parseInt(document.getElementById('second_value_two').value);
+            var total =valueOne + valueTwo;
+
+            document.getElementById('second_total').value = total
+        }
+
+        function addition3(){
+            
+            var valueOne = parseInt(document.getElementById('third_value_one').value);
+            var valueTwo = parseInt(document.getElementById('third_value_two').value);
+            var total =valueOne + valueTwo;
+
+            document.getElementById('third_total').value = total
+        }
+
+        function addition4(){
+            
+            var valueOne = parseInt(document.getElementById('fourth_value_one').value);
+            var valueTwo = parseInt(document.getElementById('fourth_value_two').value);
+            var total =valueOne + valueTwo;
+
+            document.getElementById('fourth_total').value = total
+        }
+
+        function addition5(){
+            
+            var valueOne = parseInt(document.getElementById('fifth_value_one').value);
+            var valueTwo = parseInt(document.getElementById('fifth_value_two').value);
+            var total =valueOne + valueTwo;
+
+            document.getElementById('fifth_total').value = total
+        }
+
+        function Subtraction1(){
+            
+            var valueOne = parseInt(document.getElementById('sub1_value_one').value);
+            var valueTwo = parseInt(document.getElementById('sub1_value_two').value);
+            var total =valueOne - valueTwo;
+
+            document.getElementById('sub1_total').value = total
+        }
+
+        function Subtraction2(){
+            
+            var valueOne = parseInt(document.getElementById('sub2_value_one').value);
+            var valueTwo = parseInt(document.getElementById('sub2_value_two').value);
+            var total =valueOne - valueTwo;
+
+            document.getElementById('sub2_total').value = total
+        }
+
+        function Subtraction3(){
+            
+            var valueOne = parseInt(document.getElementById('sub3_value_one').value);
+            var valueTwo = parseInt(document.getElementById('sub3_value_two').value);
+            var total =valueOne - valueTwo;
+
+            document.getElementById('sub3_total').value = total
+        }
+
+        function Subtraction4(){
+            
+            var valueOne = parseInt(document.getElementById('sub4_value_one').value);
+            var valueTwo = parseInt(document.getElementById('sub4_value_two').value);
+            var total =valueOne - valueTwo;
+
+            document.getElementById('sub4_total').value = total
+        }
+
+        function Subtraction5(){
+            
+            var valueOne = parseInt(document.getElementById('sub5_value_one').value);
+            var valueTwo = parseInt(document.getElementById('sub5_value_two').value);
+            var total =valueOne - valueTwo;
+
+            document.getElementById('sub5_total').value = total
+        }
+
+        function multiplication1(){
+            
+            var valueOne = parseInt(document.getElementById('mul1_value_one').value);
+            var valueTwo = parseInt(document.getElementById('mul1_value_two').value);
+            var total =valueOne * valueTwo;
+
+            document.getElementById('mul1_total').value = total
+        }
+
+        function multiplication2(){
+            
+            var valueOne = parseInt(document.getElementById('mul2_value_one').value);
+            var valueTwo = parseInt(document.getElementById('mul2_value_two').value);
+            var total =valueOne * valueTwo;
+
+            document.getElementById('mul2_total').value = total
+        }
+
+        function multiplication3(){
+            
+            var valueOne = parseInt(document.getElementById('mul3_value_one').value);
+            var valueTwo = parseInt(document.getElementById('mul3_value_two').value);
+            var total =valueOne * valueTwo;
+
+            document.getElementById('mul3_total').value = total
+        }
+
+        function multiplication4(){
+            
+            var valueOne = parseInt(document.getElementById('mul4_value_one').value);
+            var valueTwo = parseInt(document.getElementById('mul4_value_two').value);
+            var total =valueOne * valueTwo;
+
+            document.getElementById('mul4_total').value = total
+        }
+
+        function multiplication5(){
+            
+            var valueOne = parseInt(document.getElementById('mul5_value_one').value);
+            var valueTwo = parseInt(document.getElementById('mul5_value_two').value);
+            var total =valueOne * valueTwo;
+
+            document.getElementById('mul5_total').value = total
+        }
+
+
+        function division1(){
+            
+            var valueOne = parseInt(document.getElementById('div1_value_one').value);
+            var valueTwo = parseInt(document.getElementById('div1_value_two').value);
+            var total =valueOne / valueTwo;
+
+            document.getElementById('div1_total').value = total
+        }
+
+        function division2(){
+            
+            var valueOne = parseInt(document.getElementById('div2_value_one').value);
+            var valueTwo = parseInt(document.getElementById('div2_value_two').value);
+            var total =valueOne / valueTwo;
+
+            document.getElementById('div2_total').value = total
+        }
+
+        function division3(){
+            
+            var valueOne = parseInt(document.getElementById('div3_value_one').value);
+            var valueTwo = parseInt(document.getElementById('div3_value_two').value);
+            var total =valueOne / valueTwo;
+
+            document.getElementById('div3_total').value = total
+        }
+
+        function division4(){
+            
+            var valueOne = parseInt(document.getElementById('div4_value_one').value);
+            var valueTwo = parseInt(document.getElementById('div4_value_two').value);
+            var total =valueOne / valueTwo;
+
+            document.getElementById('div4_total').value = total
+        }
+
+        function division5(){
+            
+            var valueOne = parseInt(document.getElementById('div5_value_one').value);
+            var valueTwo = parseInt(document.getElementById('div5_value_two').value);
+            var total =valueOne / valueTwo;
+
+            document.getElementById('div5_total').value = total
+        }
+
+
+
+
+
+
+        
+        
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height:100vh;
+            background-color: bisque;
+            display: flex;
+            float: left;
+        }
+        .addition{
+            width: 25%;
+            height: 70vh;
+            background-color: rgb(169, 241, 217);
+            margin-top: 50px;
+            margin-left: 20px;
+        }
+
+        .subtraction{
+            width: 25%;
+            height: 70vh;
+            background-color: rgb(243, 152, 140);
+            margin-top: 50px;
+            margin-left: 20px;
+
+        }
+
+        .multiplication{
+            width: 25%;
+            height: 70vh;
+            background-color: rgb(222, 168, 247);
+            margin-top: 50px;
+            margin-left: 20px;
+
+        }
+        .division{
+            width: 25%;
+            height: 70vh;
+            background-color: rgb(245, 214, 148);
+            margin-top: 50px;
+            margin-left: 20px;
+
+
+        }
+        input{
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+            background-color: rgb(213, 248, 248);
+            margin-left: 10px;
+        }
+       
+
+        input:hover{
+            background-color: blanchedalmond;
+        }
+        ::placeholder{
+            color:black;
+            font-size: 13px;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="addition">
+                <h1 style="text-align: center;">Addition</h1>
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="first_value_one" placeholder="Value One">
+                <h1 >+</h1>
+                <input type="number" id="first_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="first_total"  placeholder="Total">
+     
+                <input type="button" onclick="addition1()" value="Addition">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="second_value_one" placeholder="valueOne">
+                <h1>+</h1>
+                <input type="number" id="second_value_two" placeholder="valueTwo">
+                <h1>=</h1>
+                <input type="number" id="second_total" placeholder="total">
+
+                <input type="button" onclick="addition2()" value="Addition">
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="third_value_one" placeholder="valueOne">
+                <h1>+</h1>
+                <input type="number" id="third_value_two" placeholder="valueTwo">
+                <h1>=</h1>
+                <input type="number" id="third_total" placeholder="total">
+
+                <input type="button" onclick="addition3()" value="Addition">
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="fourth_value_one" placeholder="valueOne">
+                <h1>+</h1>
+                <input type="number" id="fourth_value_two" placeholder="valueTwo">
+                <h1>=</h1>
+                <input type="number" id="fourth_total" placeholder="total">
+
+                <input type="button" onclick="addition4()" value="Addition">
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="fifth_value_one" placeholder="valueOne">
+                <h1>+</h1>
+                <input type="number" id="fifth_value_two" placeholder="valueTwo">
+                <h1>=</h1>
+                <input type="number" id="fifth_total" placeholder="total">
+
+                <input type="button" onclick="addition5()" value="Addition">
+            </div>
+
+        </div>
+
+        <div class="subtraction">
+            <h1 style="text-align: center;">Subtraction</h1>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="sub1_value_one" placeholder="Value One">
+                <h1 >-</h1>
+                <input type="number" id="sub1_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="sub1_total"  placeholder="Total">
+     
+                <input type="button" onclick="Subtraction1()" value="Subtraction">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="sub2_value_one" placeholder="Value One">
+                <h1 >-</h1>
+                <input type="number" id="sub2_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="sub2_total"  placeholder="Total">
+     
+                <input type="button" onclick="Subtraction2()" value="Subtraction">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="sub3_value_one" placeholder="Value One">
+                <h1 >-</h1>
+                <input type="number" id="sub3_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="sub3_total"  placeholder="Total">
+     
+                <input type="button" onclick="Subtraction3()" value="Subtraction">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="sub4_value_one" placeholder="Value One">
+                <h1 >-</h1>
+                <input type="number" id="sub4_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="sub4_total"  placeholder="Total">
+     
+                <input type="button" onclick="Subtraction4()" value="Addition">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="sub5_value_one" placeholder="Value One">
+                <h1 >-</h1>
+                <input type="number" id="sub5_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="sub5_total"  placeholder="Total">
+     
+                <input type="button" onclick="Subtraction5()" value="Subtraction">
+     
+            </div>
+
+         
+    
+        </div>
+
+
+        <div class="multiplication">
+            <h1 style="text-align: center;">Multiplication</h1>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="mul1_value_one" placeholder="Value One">
+                <h1 >*</h1>
+                <input type="number" id="mul1_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="mul1_total"  placeholder="Total">
+     
+                <input type="button" onclick="multiplication1()" value="Multiplication">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="mul2_value_one" placeholder="Value One">
+                <h1 >*</h1>
+                <input type="number" id="mul2_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="mul2_total"  placeholder="Total">
+     
+                <input type="button" onclick="multiplication2()" value="Multiplication">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="mul3_value_one" placeholder="Value One">
+                <h1 >*</h1>
+                <input type="number" id="mul3_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="mul3_total"  placeholder="Total">
+     
+                <input type="button" onclick="multiplication3()" value="Multiplication">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="mul4_value_one" placeholder="Value One">
+                <h1 >*</h1>
+                <input type="number" id="mul4_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="mul4_total"  placeholder="Total">
+     
+                <input type="button" onclick="multiplication4()" value="Multiplication">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="mul5_value_one" placeholder="Value One">
+                <h1 >*</h1>
+                <input type="number" id="mul5_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="mul5_total"  placeholder="Total">
+     
+                <input type="button" onclick="multiplication5()" value="Multiplication">
+     
+            </div>
+        </div>
+
+        <div class="division">
+            <h1 style="text-align: center;">division</h1>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="div1_value_one" placeholder="Value One">
+                <h1 >/</h1>
+                <input type="number" id="div1_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="div1_total"  placeholder="Total">
+     
+                <input type="button" onclick="division1()" value="division">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="div2_value_one" placeholder="Value One">
+                <h1 >/</h1>
+                <input type="number" id="div2_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="div2_total"  placeholder="Total">
+     
+                <input type="button" onclick="division2()" value="division">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="div3_value_one" placeholder="Value One">
+                <h1 >/</h1>
+                <input type="number" id="div3_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="div3_total"  placeholder="Total">
+     
+                <input type="button" onclick="division3()" value="division">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="div4_value_one" placeholder="Value One">
+                <h1 >/</h1>
+                <input type="number" id="div4_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="div4_total"  placeholder="Total">
+     
+                <input type="button" onclick="division4()" value="division">
+     
+            </div>
+
+            <div style="display: flex; margin-top: 50px;">
+                <input type="number" id="div5_value_one" placeholder="Value One">
+                <h1 >/</h1>
+                <input type="number" id="div5_value_two"  placeholder="Value Two">
+                <h1 >=</h1>
+                <input type="number" id="div5_total"  placeholder="Total">
+     
+                <input type="button" onclick="division5()" value="division">
+     
+            </div>
+
+
+        </div>
+
+
+    </div>
+</body>
+</html>

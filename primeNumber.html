@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function myFunction(){
+
+            let user = document.getElementById("user").value;
+            let isprime = true;
+
+            if (user == 1 ){
+                document.write("1 is neither prime nor composite number");
+            }
+
+            else if(user > 1){
+
+                for ( i= 2; i< user; i++){
+                    if ( user % i === 0){
+                        isprime = false;
+                    }
+                }
+
+                if(isprime){
+                    document.write(`${user} is a prime`);
+                }
+                else{
+                    document.write(`${user} is  not a prime`);
+
+                }
+            }
+            
+                 else{
+                  document.write("the number is not a prime number")
+                }
+          
+
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <input type="number" id="user" placeholder="enter number">
+
+        <input type="button" onclick="myFunction()" value="save">
+    </div>
+</body>
+</html>

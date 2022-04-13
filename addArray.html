@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        function myFunctionn(){
+
+        var a= document.getElementById("user").value;
+
+        var myValue = new Array(10);
+        let b;
+
+        for (i=1; i<myValue.length; i++){
+            myValue[i] = i;
+
+            b=i+a;
+
+            document.write(i + "+" + a + "=" + b +"<br>");
+        }
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input  type="number" id="user" placeholder="user">
+
+        <input type="button" onclick="myFunctionn()" value="add">
+    </div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function myFunctio(){
+
+            var num1 = document.getElementById("user1").value;
+            var num2 = document.getElementById("user2").value;
+            var num3 = document.getElementById("user3").value;
+            var num4 = document.getElementById("user4").value;
+
+
+            var largest;
+
+            if(num1 >= num2 && num1 >= num3 && num1 >= num4){
+                largest=num1;
+            }
+            else if(num2 >= num1 && num2 >= num3 && num2 >= num4){
+                largest= num2;
+            }
+            else if((num3 >= num1) && (num3 >= num2) && (num3 >= num4)){
+               largest = num3;
+            }
+            else{
+               largest = num4;
+            }
+
+            document.write("largest number is "+largest);
+         
+        
+
+            
+
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="number" id="user1" placeholder="value1">
+        <input type="number" id="user2" placeholder="value2">
+        <input type="number" id="user3" placeholder="value3">
+        <input type="number" id="user4" placeholder="value3">
+
+
+        <input type="button" onclick="myFunctio()" value="save">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function multiplication(){
+            let a =   document.getElementById('uservalue').value;
+
+            document.getElementById('table_displlay').style.visibility = 'visible';
+            for(i=1; i<=10; i++){
+
+                var loopId ="loop"+i;
+                var valueId ="value"+i;
+                var totalId ="total"+i;
+
+             //   if(i){
+                    
+                    document.getElementById(loopId).value = i;
+                    document.getElementById(valueId).value = a;
+                    b=a*i;
+                    document.getElementById(totalId).value = b;
+
+
+                //}
+            }
+        }
+    </script>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .main{
+            width: 100%;
+            height: 100vh;
+            float: left;
+            background-color: burlywood;
+        }
+        .box{
+            width: 60%;
+            height: 90vh;
+            background-color: rgb(49, 49, 230);
+            margin-top: 80px;
+            margin-left: 200px;
+           
+
+        }
+        input{
+            width: 170px;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+       
+        h1{
+            margin-top: 20px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+       <div class="box">
+            <input style="width: 170px; height: 40px; background-color: whitesmoke; margin-top: 50px; margin-left: 230px;" type="number" id="uservalue" placeholder="user value">
+         <div id="table_displlay" style="visibility: hidden;">
+            <div style="display: flex;">
+                <input type="number" id="loop1" placeholder="loop1">
+                <h1>X</h1>
+                <input type="number" id="value1" placeholder="value1">
+                <h1>=</h1>
+                <input type="number" id="total1"  placeholder="total">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop2" placeholder="loop2">
+                <h1>X</h1>
+                <input type="number" id="value2" placeholder="value2">
+                <h1>=</h1>
+                <input type="number" id="total2"  placeholder="total2">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop3" placeholder="loop3">
+                <h1>X</h1>
+                <input type="number" id="value3" placeholder="value3">
+                <h1>=</h1>
+                <input type="number" id="total3"  placeholder="total3">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop4" placeholder="loop4">
+                <h1>X</h1>
+                <input type="number" id="value4" placeholder="value4">
+                <h1>=</h1>
+                <input type="number" id="total4"  placeholder="total4">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop5" placeholder="loop5">
+                <h1>X</h1>
+                <input type="number" id="value5" placeholder="value5">
+                <h1>=</h1>
+                <input type="number" id="total5"  placeholder="total5">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop6" placeholder="loop6">
+                <h1>X</h1>
+                <input type="number" id="value6" placeholder="value6">
+                <h1>=</h1>
+                <input type="number" id="total6"  placeholder="total6">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop7" placeholder="loop7">
+                <h1>X</h1>
+                <input type="number" id="value7" placeholder="value7">
+                <h1>=</h1>
+                <input type="number" id="total7"  placeholder="total7">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop8" placeholder="loop8">
+                <h1>X</h1>
+                <input type="number" id="value8" placeholder="value8">
+                <h1>=</h1>
+                <input type="number" id="total8"  placeholder="total8">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop9" placeholder="loop9">
+                <h1>X</h1>
+                <input type="number" id="value9" placeholder="value9">
+                <h1>=</h1>
+                <input type="number" id="total9"  placeholder="total9">
+            </div>
+
+            <div style="display: flex;">
+                <input type="number" id="loop10" placeholder="loop10">
+                <h1>X</h1>
+                <input type="number" id="value10" placeholder="value10">
+                <h1>=</h1>
+                <input type="number" id="total10"  placeholder="total10">
+            </div>
+           </div> 
+            <input  style="width: 150px; height: 40px; background-color:cornflowerblue" type="button" onclick="multiplication()" value="multiplication">
+
+        </div>
+    </div>
+</body>
+</html>
